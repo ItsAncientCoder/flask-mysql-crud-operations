@@ -2,16 +2,16 @@
 - `python app.py`
 
 ### **TO MAKE THIS WORK(CRUD OPERATIONS).**
-1. need **mysql** db
+1. need **mysql** db with root as username and no password.(or change credentials in config.py)
 2. create **flaskdb** schema
     - ```create database flaskdb;```
-3. create table 'cdr'
-    ```create table cdr(
+3. create table 'cdr'.
+    - `create table cdr(
         cdr_id INT NOT NULL AUTO_INCREMENT,
         origin_num INT,
         termi_num INT,
         call_duration DECIMAL,
-        PRIMARY KEY ( cdr_id ));```
+        PRIMARY KEY ( cdr_id ));`
 
 ### **APIs:**
 1. Get all CDRs.
